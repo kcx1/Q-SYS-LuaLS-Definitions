@@ -5,7 +5,7 @@ Welcome to this repository of language definitions for Lua, designed specificall
 ### Purpose
 This project aims to create a comprehensive library of Lua code that can be used with your favorite text editor to make development on the Q-Sys platform much better!
 
-This repo was actually made as part of the [qplug](github.com/kcx1/qplug) project, and it's purpose will continue to serve as a vital dependency of that project. However, I see value in having this be it's own repository.
+This repo was actually made as part of the [qplug](https://github.com/kcx1/qplug) project, and it's purpose will continue to serve as a vital dependency of that project. However, I see value in having this be it's own repository.
 
 ### Features
 - A comprehensive collection of language definitions for all documented Q-Sys library functions and methods
