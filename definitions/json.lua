@@ -20,3 +20,5 @@ function json.decode(json_string) end
 
 ---Returns a unique value that will be encoded as a null in a JSON encoding.
 function json.null() end
+
+return json

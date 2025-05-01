@@ -50,8 +50,7 @@
 TcpSocketServer = {}
 
 ---Creates a new TcpServer instance
----@param self TcpSocketServer
-function TcpSocketServer:New() end
+function TcpSocketServer.New() end
 
 ---Open a port and listen for incoming connection
 ---@param self TcpSocketServer

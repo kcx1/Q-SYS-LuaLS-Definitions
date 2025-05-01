@@ -13,6 +13,7 @@ local UserControls = {
 ---@field Value number
 ---@field Position number
 ---@field Boolean boolean
+---@field Choice table<number, string> | string
 ---@field Choices table<number, string>
 ---@field Color string Color of the control
 ---@field CssClass string

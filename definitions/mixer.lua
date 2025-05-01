@@ -11,10 +11,9 @@
 Mixer = {}
 
 ---Create a new Mixer Object
----@param self Mixer
 ---@param mixerName string
 ---@return Mixer
-function Mixer:New(mixerName) end
+function Mixer.New(mixerName) end
 
 ---Sets specified cross point gains with optional ramp time.
 ---@param ins string[] list of input

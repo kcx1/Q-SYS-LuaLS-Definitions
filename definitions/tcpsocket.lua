@@ -98,7 +98,7 @@ TcpSocket = {}
 
 ---Creates a new TcpSocket instance.
 ---@return TcpSocket
-function TcpSocket:New() end
+function TcpSocket.New() end
 
 ---Attempts to connect to the specified ip/host name and port, 'ipAddress/hostname' is string, 'port' is integer
 ---@param self TcpSocket
@@ -131,5 +131,3 @@ function TcpSocket:ReadLine(EOL, custom) end
 ---@param str string the string/pattern to find
 ---@param start_pos number? optional index where to start to search, default value is 1
 function TcpSocket:Search(str, start_pos) end
-
-sock = TcpSocket:New()

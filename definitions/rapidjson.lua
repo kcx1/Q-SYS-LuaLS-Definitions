@@ -67,3 +67,5 @@ function rapidjson.SchemaValidator(sd) end
 ---@param value table A JSON document to be validated against the schema stored inside the validator.
 ---@return boolean valid Whether the document is valid and an error message if invalid (or nil if no message).
 function SchemaValidator:validate(value) end
+
+return rapidjson
