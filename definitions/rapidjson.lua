@@ -37,12 +37,18 @@ function rapidjson.dump(value, filename, option) end
 ---null : Placeholder for null values in rapidjson.
 function rapidjson.null() end
 
+---@alias JsonArray any[]
+---@alias JsonObject table<string | number, any>
+
 ---Create a new empty table that has the metatable field __jsontype set as 'object' so that the encode and dump function will encode it as a JSON object.
----@param table table? Optional table to set the metatable with meta field __jsontype set as 'object'.
-function rapidjson.object(table) end
+---@param tbl table? Optional table to set the metatable with meta field __jsontype set as 'object'.
+---@return JsonObject
+function rapidjson.object(tbl) end
 
 ---Same as rapidjson.object(), except the metatable field __jsontype is set as 'array'. The encode and dump function will encode it as JSON array.
-function rapidjson.array() end
+---@param tbl table?
+---@return JsonArray
+function rapidjson.array(tbl) end
 
 ---Ai Generated
 ---@class SchemaDocument
