@@ -12,7 +12,7 @@
 ---@field MinString string
 ---@field MaxString string
 
----@class Components
+---@class NamedComponent
 ---@field Name string
 ---@field Properties ComponentProperties
 
@@ -20,6 +20,7 @@
 ---@class Component
 ---@field GetComponents fun(): table<number, Components> Return a table of all Named Components in the design and their properties.
 ---@field GetControls fun(Name: string | Component): table<number, Control>
+---@field New fun(name: string): NamedComponent
 Component = {}
 ---```lua
 ---comps = Component.GetComponents()
@@ -61,7 +62,7 @@ Component.GetComponents = function() end
 ---@return table<number, Control>
 Component.GetControls = function(Name) end
 
---- Creates a new Component instance with a specified name.
+--- Creates a new Named Component instance with a specified name.
 --- Example:
 --- ```lua
 ---gainA = Component.New("gain a")
@@ -75,5 +76,5 @@ Component.GetControls = function(Name) end
 ---end
 ---```
 --- @param Name string The name of the component
---- @return Components # The newly created Component instance
+--- @return NamedComponent # The newly created Component instance
 function Component.New(Name) end
