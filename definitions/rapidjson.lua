@@ -8,9 +8,9 @@
 local rapidjson
 
 ---@class JsonOptions
----@field pretty boolean Set true to make output string to be pretty formated. Default is false.
----@field sort_keys boolean Set true to make JSON object keys be sorted. Default is false.
----@field empty_table_as_array boolean Set true to make empty table encode as JSON array. Default is false.
+---@field pretty? boolean Set true to make output string to be pretty formated. Default is false.
+---@field sort_keys? boolean Set true to make JSON object keys be sorted. Default is false.
+---@field empty_table_as_array? boolean Set true to make empty table encode as JSON array. Default is false.
 
 ---encode : Encode a Lua table to JSON string. JSON object keys are sorted by this function.
 ---@param value any
