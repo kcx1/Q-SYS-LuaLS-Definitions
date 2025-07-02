@@ -46,10 +46,11 @@
 ---server:Listen(1720) -- This listen port is opened on all network interfaces
 ---```
 ---@class TcpSocketServer
----@field EventHandler fun() Function called on any incoming socket event
+---@field EventHandler fun(sock: TcpSocket, event: Events, err: any)
 TcpSocketServer = {}
 
----Creates a new TcpServer instance
+---Creates a new TcpServer instance 
+---@return TcpSocketServer
 function TcpSocketServer.New() end
 
 ---Open a port and listen for incoming connection
